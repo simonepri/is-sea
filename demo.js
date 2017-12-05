@@ -2,7 +2,7 @@ const leaflet = require('leaflet');
 const GeoJsonLookup = require('geojson-geometries-lookup');
 
 async function fetchMapAsync() {
-  const response = await fetch('https://unpkg.com/@geo-maps/earth-seas-1m/map.geo.json');
+  const response = await fetch('https://unpkg.com/@geo-maps/earth-seas-10m/map.geo.json');
   const data = await response.json();
   return data;
 }

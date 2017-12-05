@@ -1,7 +1,7 @@
 'use strict';
 
 const GeoJsonLookup = require('geojson-geometries-lookup');
-const getMap = require('@geo-maps/earth-seas-1m');
+const getMap = require('@geo-maps/earth-seas-10m');
 
 let landLookup = null;
 

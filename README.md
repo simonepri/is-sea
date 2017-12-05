@@ -1,39 +1,39 @@
-# is-land
-[![Travis CI](https://travis-ci.org/simonepri/is-land.svg?branch=master)](https://travis-ci.org/simonepri/is-land) [![Codecov](https://img.shields.io/codecov/c/github/simonepri/is-land/master.svg)](https://codecov.io/gh/simonepri/is-land) [![npm](https://img.shields.io/npm/dm/is-land.svg)](https://www.npmjs.com/package/is-land) [![npm version](https://img.shields.io/npm/v/is-land.svg)](https://www.npmjs.com/package/is-land) [![npm dependencies](https://david-dm.org/simonepri/is-land.svg)](https://david-dm.org/simonepri/is-land) [![npm dev dependencies](https://david-dm.org/simonepri/is-land/dev-status.svg)](https://david-dm.org/simonepri/is-land#info=devDependencies)
-> 🏝 Check wheather a geographic coordinate is land or not on the earth.
+# is-sea
+[![Travis CI](https://travis-ci.org/simonepri/is-sea.svg?branch=master)](https://travis-ci.org/simonepri/is-sea) [![Codecov](https://img.shields.io/codecov/c/github/simonepri/is-sea/master.svg)](https://codecov.io/gh/simonepri/is-sea) [![npm](https://img.shields.io/npm/dm/is-sea.svg)](https://www.npmjs.com/package/is-sea) [![npm version](https://img.shields.io/npm/v/is-sea.svg)](https://www.npmjs.com/package/is-sea) [![npm dependencies](https://david-dm.org/simonepri/is-sea.svg)](https://david-dm.org/simonepri/is-sea) [![npm dev dependencies](https://david-dm.org/simonepri/is-sea/dev-status.svg)](https://david-dm.org/simonepri/is-sea#info=devDependencies)
+> 🌊 Check whether a geographic coordinate is in the sea or not on the earth.
 
 <p align="center">
-  <a href="http://simonepri.github.io/is-land/"><img src="https://raw.githubusercontent.com/simonepri/is-land/master/demo/index.png" width="400"/></a>
+  <a href="http://simonepri.github.io/is-sea/"><img src="https://raw.githubusercontent.com/simonepri/is-sea/master/demo/index.png" width="400"/></a>
 </p>
 
 > Click on the map for a live preview.
 
 ## Install
 ```bash
-$ npm install --save is-land
+$ npm install --save is-sea
 ```
 
 ## Usage
 You can query any `(lat,lng)` pair on the earth.
 
 ```javascript
-const isLand = require('is-land');
+const isLand = require('is-sea');
 
 // Query a point in Italy.
 isLand.get(41.9028, 12.4964);
-// => true
+// => false
 
 // Query a point somewhere in Atlantic Ocean.
 isLand.get(40, -40);
-// => false
+// => true
 ```
-> The package internally uses [@geo-maps/earth-lands](https://github.com/simonepri/geo-maps/blob/master/info/earth-lands.md) map with 10m resolution.
+> The package internally uses [@geo-maps/earth-seas](https://github.com/simonepri/geo-maps/blob/master/info/earth-seas.md) map with 10m resolution.
 
 ## API
 ## get(lat, lng) ⇒ <code>Array.&lt;string&gt;</code>
-Returns wheather the given point is land or not.
+Returns wheather the given point is in the sea or not.
 
-**Returns**: <code>Array.&lt;string&gt;</code> - True if the point is on land, false otherwise.
+**Returns**: <code>Array.&lt;string&gt;</code> - True if the point is in the sea, false otherwise.
 
 | Param | Type | Description |
 | --- | --- | --- |

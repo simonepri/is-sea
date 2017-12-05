@@ -2,13 +2,13 @@ const leaflet = require('leaflet');
 const GeoJsonLookup = require('geojson-geometries-lookup');
 
 async function fetchMapAsync() {
-  const response = await fetch('https://unpkg.com/@geo-maps/earth-lands-10m/map.geo.json');
+  const response = await fetch('https://unpkg.com/@geo-maps/earth-seas-1m/map.geo.json');
   const data = await response.json();
   return data;
 }
 
 let landLookup = null;
-async function isLand(lat, lng) {
+async function isSea(lat, lng) {
   if (landLookup === null) {
     const map = await fetchMapAsync();
     landLookup = new GeoJsonLookup(map);
@@ -20,7 +20,7 @@ async function showInfo(map, latlng) {
   latlng = latlng.wrap();
 
   const output = {
-    isLand: await isLand(latlng.lat, latlng.lng)
+    isSea: await isSea(latlng.lat, latlng.lng)
   };
 
   const msg = JSON.stringify(output, null, 2).replace(/\r?\n|\r/g, '<br/>').replace(/ /g, '&ensp;');

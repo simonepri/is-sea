@@ -1,7 +1,7 @@
 'use strict';
 
 const GeoJsonLookup = require('geojson-geometries-lookup');
-const getMap = require('@geo-maps/earth-lands-10m');
+const getMap = require('@geo-maps/earth-seas-1m');
 
 let landLookup = null;
 
@@ -12,7 +12,7 @@ let landLookup = null;
  * @param {number} lng  The longitude of the point.
  * @return {boolean} True if the point is on land, false otherwise.
  */
-function isLand(lat, lng) {
+function isSea(lat, lng) {
   if (landLookup === null) {
     const map = getMap();
     landLookup = new GeoJsonLookup(map);
@@ -21,4 +21,4 @@ function isLand(lat, lng) {
   return landLookup.hasContainers({type: 'Point', coordinates: [lng, lat]});
 }
 
-module.exports = isLand;
+module.exports = isSea;

@@ -1,0 +1,77 @@
+{
+  "name": "country-iso",
+  "version": "1.0.0",
+  "description": "Check wheather a geographic coordinate is land or not on the earth.",
+  "main": "index.js",
+  "dependencies": {
+    "@geo-maps/earth-lands-10m": "^0.6.0",
+    "geojson-geometries-lookup": "^0.2.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "browserify": "^14.5.0",
+    "codecov": "^3.0.0",
+    "fs-extra": "^4.0.2",
+    "i18n-iso-countries": "^3.2.2",
+    "leaflet": "^1.2.0",
+    "nyc": "^11.3.0",
+    "xo": "*"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "test": "xo && nyc ava --verbose",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "build-demo": "node --max-old-space-size=65536 ./node_modules/.bin/browserify demo.js > demo/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonepri/country-iso.git"
+  },
+  "author": [
+    {
+      "name": "Simone Primarosa",
+      "email": "simone.pri@hotmail.it"
+    }
+  ],
+  "keywords": [
+    "is-land",
+    "is-water",
+    "is-waterbody",
+    "land",
+    "lands",
+    "water",
+    "waters",
+    "waterbody",
+    "waterbodies",
+    "get",
+    "earth",
+    "world"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simonepri/country-iso/issues"
+  },
+  "homepage": "https://github.com/simonepri/country-iso#readme",
+  "xo": {
+    "space": true,
+    "ignores": [
+      "demo.js",
+      "demo/**",
+      "fixtures/**"
+    ]
+  },
+  "ava": {
+    "match": [
+      "!demo/**",
+      "!fixtures/**"
+    ]
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "package.json",
+    "index.js"
+  ]
+}

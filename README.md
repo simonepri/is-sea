@@ -17,14 +17,14 @@ $ npm install --save is-sea
 You can query any `(lat,lng)` pair on the earth.
 
 ```javascript
-const isLand = require('is-sea');
+const isSea = require('is-sea');
 
 // Query a point in Italy.
-isLand.get(41.9028, 12.4964);
+isSea.get(41.9028, 12.4964);
 // => false
 
 // Query a point somewhere in Atlantic Ocean.
-isLand.get(40, -40);
+isSea.get(40, -40);
 // => true
 ```
 > The package internally uses [@geo-maps/earth-seas](https://github.com/simonepri/geo-maps/blob/master/info/earth-seas.md) map with 10m resolution.

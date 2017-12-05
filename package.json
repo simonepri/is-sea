@@ -1,6 +1,6 @@
 {
   "name": "is-sea",
-  "version": "1.0.0",
+  "version": "0.3.0",
   "description": "Check whether a geographic coordinate is in the sea or not on the earth.",
   "main": "index.js",
   "dependencies": {

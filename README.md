@@ -3,7 +3,7 @@
 > 🌊 Check whether a geographic coordinate is in the sea or not on the earth.
 
 <p align="center">
-  <a href="http://simonepri.github.io/is-sea/"><img src="https://raw.githubusercontent.com/simonepri/is-sea/master/demo/index.png" width="400"/></a>
+  <a href="http://simonepri.github.io/is-sea/"><img src="https://raw.githubusercontent.com/simonepri/is-sea/master/demo/index.png" width="800"/></a>
 </p>
 
 > Click on the map for a live preview.

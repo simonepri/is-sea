@@ -3,10 +3,18 @@
 > 🌊 Check whether a geographic coordinate is in the sea or not on the earth.
 
 <p align="center">
-  <a href="http://simonepri.github.io/is-sea/"><img src="https://raw.githubusercontent.com/simonepri/is-sea/master/demo/index.png" width="800"/></a>
+  <a href="http://simonepri.github.io/is-sea/"><img src="https://raw.githubusercontent.com/simonepri/is-sea/master/demo/index.png" width="700"/></a>
 </p>
 
-> Click on the map for a live preview.
+<p align="center">Click on the map to see a live preview.</p>
+
+## Synopsis
+Given the latitude and longitude coordinates this package returns whether the point fall into a sea/ocean or not.
+
+The package internally uses [@geo-maps/earth-seas](https://github.com/simonepri/geo-maps/blob/master/info/earth-seas.md) map with 10m resolution.
+The accuracy of the map has not been tested but the [demo](http://simonepri.github.io/is-sea/) allows you to actually test it manually by just clicking on the map to see what it returns.
+
+Do you believe that this is useful? If so, <a href="#start-of-content">support us with a ⭐️</a>!
 
 ## Install
 ```bash
@@ -27,7 +35,6 @@ isSea.get(41.9028, 12.4964);
 isSea.get(40, -40);
 // => true
 ```
-> The package internally uses [@geo-maps/earth-seas](https://github.com/simonepri/geo-maps/blob/master/info/earth-seas.md) map with 10m resolution.
 
 ## API
 ## get(lat, lng) ⇒ <code>Array.&lt;string&gt;</code>
@@ -40,10 +47,13 @@ Returns wheather the given point is in the sea or not.
 | lat | <code>number</code> | The latitude of the point. |
 | lng | <code>number</code> | The longitude of the point. |
 
+## Related
+* [country-iso](https://github.com/simonepri/country-iso): 🗺 Get ISO 3166-1 alpha-3 country code from geographic coordinates.
+
 ## Authors
 * **Simone Primarosa** - [simonepri](https://github.com/simonepri)
 
-See also the list of [contributors](https://github.com/simonepri/world-country/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/simonepri/is-sea/contributors) who participated in this project.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

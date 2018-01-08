@@ -1,4 +1,6 @@
 # is-sea
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/simonepri/is-sea.svg)](https://greenkeeper.io/)
 [![Travis CI](https://travis-ci.org/simonepri/is-sea.svg?branch=master)](https://travis-ci.org/simonepri/is-sea) [![Codecov](https://img.shields.io/codecov/c/github/simonepri/is-sea/master.svg)](https://codecov.io/gh/simonepri/is-sea) [![npm](https://img.shields.io/npm/dm/is-sea.svg)](https://www.npmjs.com/package/is-sea) [![npm version](https://img.shields.io/npm/v/is-sea.svg)](https://www.npmjs.com/package/is-sea) [![npm dependencies](https://david-dm.org/simonepri/is-sea.svg)](https://david-dm.org/simonepri/is-sea) [![npm dev dependencies](https://david-dm.org/simonepri/is-sea/dev-status.svg)](https://david-dm.org/simonepri/is-sea#info=devDependencies)
 > 🌊 Check whether a geographic coordinate is in the sea or not on the earth.
 

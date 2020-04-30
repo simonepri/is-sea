@@ -6,7 +6,7 @@ const getMap = require('@geo-maps/earth-seas-10m');
 let landLookup = null;
 
 /**
- * Returns wheather the given point is in the sea or not.
+ * Returns whether the given point is in the sea or not.
  * @public
  * @param {number} lat  The latitude of the point.
  * @param {number} lng  The longitude of the point.

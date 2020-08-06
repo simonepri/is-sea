@@ -28,11 +28,11 @@ You can query any `(lat,lng)` pair on the earth.
 const isSea = require('is-sea');
 
 // Query a point in Italy.
-isSea.get(41.9028, 12.4964);
+isSea(41.9028, 12.4964);
 // => false
 
 // Query a point somewhere in Atlantic Ocean.
-isSea.get(40, -40);
+isSea(40, -40);
 // => true
 ```
 

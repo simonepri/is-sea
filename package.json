@@ -5,20 +5,20 @@
   "main": "index.js",
   "dependencies": {
     "@geo-maps/earth-seas-10m": "^0.6.0",
-    "geojson-geometries-lookup": "^0.2.0"
+    "geojson-geometries-lookup": "^0.5.0"
   },
   "devDependencies": {
     "ava": "*",
-    "browserify": "^14.5.0",
+    "browserify": "^17.0.0",
     "codecov": "^3.0.0",
-    "fs-extra": "^4.0.2",
-    "i18n-iso-countries": "^3.2.2",
+    "fs-extra": "^9.0.0",
+    "i18n-iso-countries": "^6.4.0",
     "leaflet": "^1.2.0",
-    "nyc": "^11.3.0",
+    "nyc": "^15.0.0",
     "xo": "*"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=10"
   },
   "scripts": {
     "test": "xo && nyc ava --verbose",
@@ -29,12 +29,10 @@
     "type": "git",
     "url": "git+https://github.com/simonepri/is-sea.git"
   },
-  "author": [
-    {
-      "name": "Simone Primarosa",
-      "email": "simone.pri@hotmail.it"
-    }
-  ],
+  "author": {
+    "name": "Simone Primarosa",
+    "email": "simone.pri@hotmail.it"
+  },
   "keywords": [
     "is-land",
     "is-water",

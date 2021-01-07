@@ -12,3 +12,4 @@ npm-shrinkwrap.json
 
 # OS
 .DS_Store
+yarn.lock

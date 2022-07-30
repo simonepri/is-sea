@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "@geo-maps/earth-seas-10m": "^0.6.0",
-    "geojson-geometries-lookup": "^0.2.0"
+    "geojson-geometries-lookup": "^0.2.0",
+    "@turf/buffer"; "^6.5.0"
   },
   "devDependencies": {
     "ava": "*",

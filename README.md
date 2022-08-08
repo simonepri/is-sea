@@ -55,7 +55,7 @@ Returns wheather the given point is in the sea or not.
 
 ## Authors
 * **Simone Primarosa** - [simonepri](https://github.com/simonepri)
-* **Lee Prevost** - [leeprevost](https://github.com/leeprevost)
+
 
 See also the list of [contributors](https://github.com/simonepri/is-sea/contributors) who participated in this project.
 

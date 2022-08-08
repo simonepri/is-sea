@@ -4,6 +4,7 @@
   "description": "Check whether a geographic coordinate is in the sea or not on the earth.",
   "main": "index.js",
   "dependencies": {
+    "@geo-maps/countries-maritime-10m": "^0.6.0",
     "@geo-maps/earth-seas-10m": "^0.6.0",
     "geojson-geometries-lookup": "^0.2.0"
   },

@@ -18,7 +18,7 @@ function isSea(lat, lng, radius=0, units='nauticalmiles') {
     landLookup = new GeoJsonLookup(map);
   }
 
-  return landLookup.hasContainers({type: 'Point', coordinates: [lng, lat]});
+  return !landLookup.hasContainers({type: 'Point', coordinates: [lng, lat]});   //returned logical not since this looking for points contained by containers in sea.
 }
 
 module.exports = isSea;

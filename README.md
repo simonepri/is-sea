@@ -14,11 +14,12 @@ Given the latitude and longitude coordinates this package returns whether the po
 The package internally uses [@geo-maps/earth-seas](https://github.com/simonepri/geo-maps/blob/master/info/earth-seas.md) map with 10m resolution.
 The accuracy of the map has not been tested but the [demo](http://simonepri.github.io/is-sea/) allows you to actually test it manually by just clicking on the map to see what it returns.
 
-** Modified by Lee Prevost to use @geo-maps/
+** Modified by Lee Prevost to use @geo-maps/countries-maritime-10m for political maritime boundaries.
+See https://github.com/simonepri/geo-maps for demo.
 
 Do you believe that this is useful? If so, <a href="#start-of-content">support us with a ⭐️</a>!
 
-## Install
+## Install  (does not work for this fork)
 ```bash
 $ npm install --save is-sea
 ```
@@ -54,6 +55,7 @@ Returns wheather the given point is in the sea or not.
 
 ## Authors
 * **Simone Primarosa** - [simonepri](https://github.com/simonepri)
+* **Lee Prevost** - [leeprevost](https://github.com/leeprevost)
 
 See also the list of [contributors](https://github.com/simonepri/is-sea/contributors) who participated in this project.
 

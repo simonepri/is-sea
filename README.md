@@ -1,6 +1,6 @@
 # is-sea
 [![Travis CI](https://travis-ci.org/simonepri/is-sea.svg?branch=master)](https://travis-ci.org/simonepri/is-sea) [![Codecov](https://img.shields.io/codecov/c/github/simonepri/is-sea/master.svg)](https://codecov.io/gh/simonepri/is-sea) [![npm](https://img.shields.io/npm/dm/is-sea.svg)](https://www.npmjs.com/package/is-sea) [![npm version](https://img.shields.io/npm/v/is-sea.svg)](https://www.npmjs.com/package/is-sea) [![npm dependencies](https://david-dm.org/simonepri/is-sea.svg)](https://david-dm.org/simonepri/is-sea) [![npm dev dependencies](https://david-dm.org/simonepri/is-sea/dev-status.svg)](https://david-dm.org/simonepri/is-sea#info=devDependencies)
-> 🌊 Check whether a geographic coordinate is in the sea or not on the earth.
+> 🌊 Check whether a geographic coordinate on the Earth is in the sea or not.
 
 <p align="center">
   <a href="http://simonepri.github.io/is-sea/"><img src="https://raw.githubusercontent.com/simonepri/is-sea/master/demo/index.png" width="700"/></a>
@@ -13,6 +13,8 @@ Given the latitude and longitude coordinates this package returns whether the po
 
 The package internally uses [@geo-maps/earth-seas](https://github.com/simonepri/geo-maps/blob/master/info/earth-seas.md) map with 10m resolution.
 The accuracy of the map has not been tested but the [demo](http://simonepri.github.io/is-sea/) allows you to actually test it manually by just clicking on the map to see what it returns.
+
+** Modified by Lee Prevost to use @geo-maps/
 
 Do you believe that this is useful? If so, <a href="#start-of-content">support us with a ⭐️</a>!
 

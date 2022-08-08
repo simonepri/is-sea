@@ -14,6 +14,9 @@ test('42.105019N, 12.316765W should return false for a point in the lake', t => 
   t.false(m(42.105019, 12.316765));
 });
 
-test('41.753859N, 12.223008W should return true for a point in the sea', t => {
-  t.true(m(41.753859, 12.223008));
+// refactored to use maritime boundaries of 12nm.   Point in the sea more than 12nm.  
+// https://github.com/simonepri/geo-maps/blob/master/info/countries-maritime.md
+
+test('31.9592N,80.4570W should return true for a point in the sea', t => {
+  t.true(m(31.9592, 80.4570));
 });

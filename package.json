@@ -1,5 +1,6 @@
 {
   "name": "is-sea",
+  "type": "module",
   "version": "0.3.1",
   "description": "Check whether a geographic coordinate is in the sea or not on the earth.",
   "main": "index.js",
@@ -18,7 +19,7 @@
     "xo": "*"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=13"
   },
   "scripts": {
     "test": "xo && nyc ava --verbose",

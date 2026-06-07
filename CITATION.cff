@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: is-sea
+abstract: Check whether a geographic coordinate is in the sea or not on the earth.
+authors:
+  - family-names: Primarosa
+    given-names: Simone
+repository-code: "https://github.com/simonepri/is-sea"
+url: "https://github.com/simonepri/is-sea"
+license: MIT
+date-released: 2017-12-01
+doi: 10.5281/zenodo.20585085
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20585085
+    description: Concept DOI (resolves to the latest version)
+  - type: doi
+    value: 10.5281/zenodo.20585086
+    description: Version 0.3.1
+keywords:
+  - geojson
+  - geography
+  - sea
+  - ocean
+  - coordinates
